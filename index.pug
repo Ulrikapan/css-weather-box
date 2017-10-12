@@ -1,0 +1,99 @@
+body
+  .weatherbox
+     label 
+      input#tempshow(type="checkbox")
+      .top
+        .alert
+          i.fa.fa-hand-o-down(aria-hidden='true')
+          |CLICK TO CHECK THE TEMPERATURE
+          //-上面是font awesome圖示 
+          //- svg.icon(viewbox="-80 -80 160 160")
+            circle(cx=-0 cy=0 r=4)
+            circle(cx=0 cy=0 r=2.5)
+            polygon(points="0,0 3,6 6,3")
+            polygon(points="2,3 3,2 6.3,5.5 5.3,6.7")
+      
+        .moon
+        .cloud
+          .rain
+          .rain.rain2
+          .rain.rain3
+        svg.temsvg(viewbox="0 0 100 45")
+          circle(cx=0 cy=13 r=1)
+          text(x=-3 y=19) 26°C
+
+          circle(cx=20 cy=15 r=1)
+          text(x=17 y=21) 25°C
+
+          circle(cx=40 cy=10 r=1)
+          text(x=37 y=16) 27°C
+
+          circle(cx=60 cy=13 r=1)
+          text(x=57 y=19) 26°C
+
+          circle(cx=80 cy=20 r=1)
+          text(x=77 y=26) 23°C
+
+          circle(cx=100 cy=4 r=1)
+          text(x=97 y=10) 29°C
+
+          polyline(points="0,13 20,15 40,10 60,13 80,20 100,4")
+
+        .textarea
+          .temp 25°C
+          .address 新北市樹林區
+          .content 多雲偶有陣雨
+
+      .bottom
+        .arrow
+        .dayweather
+          h3 MON
+          svg.icon(viewbox="-10 -10 20 20")
+            circle.sun(cx=0 cy=0 r=5)
+        .dayweather
+          h3 TUE
+          svg.icon(viewbox="-10 -10 20 20")
+            circle.sun(cx=-1 cy=0 r=4)
+            circle.cloud(cx=2 cy=4 r=3)
+            circle.cloud(cx=-1 cy=4 r=3)
+            circle.cloud(cx=5 cy=4 r=3)
+            circle.cloud(cx=4 cy=1 r=2)
+            circle.cloud(cx=1 cy=1 r=3)
+        .dayweather
+          h3 WED
+          svg.icon(viewbox="-10 -10 20 20")
+            circle.sun(cx=0 cy=0 r=5)
+        .dayweather
+          h3 THU
+          svg.icon(viewbox="-10 -10 20 20")
+            circle.sun(cx=-1 cy=0 r=4)
+            circle.cloud(cx=2 cy=4 r=3)
+            circle.cloud(cx=-1 cy=4 r=3)
+            circle.cloud(cx=5 cy=4 r=3)
+            circle.cloud(cx=4 cy=1 r=2)
+            circle.cloud(cx=1 cy=1 r=3)
+        .dayweather.dayweather5
+          h3 FRI
+          svg.icon(viewbox="-5.5 -2 15 15")
+            circle.cloud(cx=2 cy=6 r=3)
+            circle.cloud(cx=-1 cy=6 r=3)
+            circle.cloud(cx=5 cy=6 r=3)
+            circle.cloud(cx=4 cy=3 r=2)
+            circle.cloud(cx=1 cy=3 r=3)
+            polyline.thunder(points="5,7 8,4 7,7")
+            polyline.thunder(points="6,7 8,7 5,10")
+        .dayweather
+          h3 SAT
+          svg.icon(viewbox="-7.5 -2 18 18")
+            rect.rain(x=0 y=-1 width="1" height="4")
+            rect.rain.rain2(x=3 y=-1 width="1" height="4")
+            rect.rain.rain3(x=-2 y=-1 width="1" height="4")
+            circle.cloud(cx=2 cy=6 r=3)
+            circle.cloud(cx=-1 cy=6 r=3)
+            circle.cloud(cx=5 cy=6 r=3)
+            circle.cloud(cx=4 cy=3 r=2)
+            circle.cloud(cx=1 cy=3 r=3)
+        .dayweather
+          h3 SUN
+          svg.icon(viewbox="-10 -10 20 20")
+            circle.sun(cx=0 cy=0 r=5)
